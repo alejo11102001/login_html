@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("fondo2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.login-cuadro {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    width: 300px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.login-cuadro h2 {
+    margin-bottom: 25px;
+    color: #00ffff;
+    font-size: 24px;
+}
+
+.login-cuadro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.login-cuadro input:focus {
+    outline: 1px solid #00ffff;
+    background-color: #1e1e1e;
+}
+
+.login-cuadro button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-cuadro .btn-secondary {
+    background-color: #00ffff;
+    color: #000;
+}
+
+.login-cuadro button:hover {
+    background-color: #00cccc;
+}
+
+.login-cuadro .btn-secondary:hover {
+    background-color: #00cccc;
+}
+
+.enlace-estilizado {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.enlace-estilizado:hover {
+    background-color: #00cccc;
+}
+
+.enlace-estilizado-password{
+    margin-top: 5px; 
+    color: #ccc;
+    text-decoration: none;
+}
+
+.cuenta{
+    margin-top: 5px; 
+    color: #ccc;
+}
+
+.contenedor-checkbox {
+    display:flex;
+    color: #ccc;
+    float: right;
+}
+
+.login-cuadro .contenedor-checkbox span{
+    transform: translateY(-8px);
+    margin: 4px;
+}
+
+.login-cuadro .fa-brands.fa-google {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    color: #4285F4;
+}
+
+.login-cuadro .fa-brands.fa-facebook {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    color: #4285F4;
+}
